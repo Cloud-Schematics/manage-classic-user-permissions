@@ -23,7 +23,7 @@ variable iaas_classic_api_key {
 }
 
 variable region {
-  description = "Region where VPC will be created"
+  description = "Region where the IBM Provider will be initialized"
   type        = string
 }
 
