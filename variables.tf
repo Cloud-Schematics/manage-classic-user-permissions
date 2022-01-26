@@ -60,9 +60,9 @@ variable classic_users_from_data {
   description = "A list of IDs for user imported manually. Users must be imported before this variable should be updated."
   type        = list(string)
   default     = [
-    "9083260",
-    "9089460",
-    "9089462"
+    "1111111",
+    "2222222",
+    "3333333"
   ]
 }
 
