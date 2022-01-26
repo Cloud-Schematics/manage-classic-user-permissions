@@ -58,5 +58,11 @@ do
     
 done
 
+
+# Use case for empty variable
+if [ "$TF_JSON" == "[" ]; then
+    TF_JSON="[]"
+fi
+
 # Return as data, removing the last trailing comma and adding a close array bracker
 jq -n --arg data "${TF_JSON%?}]" '{"data":$data}'
